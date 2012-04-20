@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	<welcome-file-list>
+		<welcome-file>home</welcome-file>
+	</welcome-file-list>
+	
+    
+    <servlet>
+        <servlet-name>newchapterservlet</servlet-name>
+        <servlet-class>com.android.adg.NewChapterApplicationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>newchapterservlet</servlet-name>
+        <url-pattern>/newchaptersubmit</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>updatechapterservlet</servlet-name>
+        <servlet-class>com.android.adg.UpdateChapterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatechapterservlet</servlet-name>
+        <url-pattern>/updatechapter</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adduserservlet</servlet-name>
+        <servlet-class>com.android.adg.AddUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adduserservlet</servlet-name>
+        <url-pattern>/adduser</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>updateuserservlet</servlet-name>
+        <servlet-class>com.android.adg.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateuserservlet</servlet-name>
+        <url-pattern>/updateuser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>spring</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/active-chapters</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/faq</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/newchapter</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/adminuser</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/adminchapter</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/chapter</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <url-pattern>/newchapterapply</url-pattern>
+    </servlet-mapping>
+
+	
+</web-app>
